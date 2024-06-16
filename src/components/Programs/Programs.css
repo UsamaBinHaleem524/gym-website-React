@@ -1,0 +1,85 @@
+.Programs-header{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-weight: bold;
+    font-size: 2.5rem;
+    font-style: italic;
+    text-transform: uppercase;
+    gap: 1.5rem;
+    text-overflow: inherit;  
+}
+.Programs-header>span:nth-of-type(1){
+    margin-left: 5rem;
+}
+.Programs-header>span:nth-of-type(3){
+    margin-right: 5rem;
+}
+
+.programs-categories{
+    display: flex;
+    gap:1rem;
+    padding: 1rem;
+   
+   
+}
+.category{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    padding: 2rem;  
+    gap:1rem;  
+    justify-content: space-between;
+}
+.category:hover{
+    cursor: pointer;
+    background:var(--planCard);
+    
+}
+ .category>:nth-child(1){
+    width: 2rem;
+    height: 2rem;
+    fill: white;
+    white-space: nowrap; 
+}
+.category>:nth-child(2){
+    font-weight: bold;  
+}
+.category>:nth-child(3){
+    line-height: 2rem;
+    font-size: 0.9rem;  
+}
+.join-now{
+    display: flex;
+    align-items: center;
+    gap:2rem;
+    flex-direction: start;
+}
+.join-now>img{
+    width: 1.1rem;
+}
+@media screen and (max-width:768px){
+    .Programs-header{
+        position: relative;
+        left: 2.7rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: x-large;
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+    .Programs-header>span:nth-of-type(1){
+        position: relative;
+        right: 5rem;
+    }
+    .Programs-header>span:nth-of-type(2){
+        position: relative;
+        right: 3rem;
+    }
+    .programs-categories{
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+}

@@ -1,0 +1,98 @@
+.container{
+    display: flex;
+    padding: 0 2rem;
+    gap:1rem;
+
+}
+.join-text{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    color: white;
+    font-weight: bold;
+    font-size: 3rem;
+    text-transform: uppercase;
+    gap: 1.5rem; 
+}
+.left-sec{
+    position: relative;
+}
+.right-sec{
+   display: flex;
+   justify-content: center;
+   align-items: flex-end;
+   position: relative;
+}
+
+.left-sec>hr{
+    position: absolute;
+    width: 10.5rem;
+    border: 2px solid var(--orange);
+    border-radius: 20%;
+    margin: -10px 0;    
+
+}
+.form-container{
+    background-color: gray;
+    padding: 1rem 2rem;
+    display: flex;
+    gap:2rem;
+    position: absolute;
+    width: 19rem;
+    left: 20rem;
+
+}
+.form-container>input{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: lightgray;
+}
+::placeholder{
+    color: lightgray;
+}
+.form-container>button{
+    color: white;
+    background-color: var(--orange);
+    border: none;
+    padding: 0.5rem;
+    font-weight: bold;
+}
+@media screen and (max-width:768px){
+    .container{
+        position: relative;
+        top: 17rem;
+    }
+    .join-text{
+        position: relative;
+        top: 1rem;
+        right:-2rem;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        gap: 1rem; 
+    }
+    .form-container { 
+        padding: 1rem 1rem;
+        gap: 0.4rem;
+        position: absolute;
+        width: 12rem;
+        height: 1rem;
+        left: -13rem;
+        top: -4rem;
+    }
+    .form-container>input{
+        font-size: xx-small;
+    }
+    .form-container>button{
+        padding: 0.5rem;
+        font-size: xx-small;
+        width: 8rem;
+        height: 2rem;
+        position: relative;
+        bottom: 0.5rem;
+        left:0.5rem
+    }
+    .left-sec>hr {
+        display: none;
+    }
+}
